@@ -56,7 +56,7 @@ st.set_page_config(layout="wide")
 # This folder can be found in the following path of the downloaded folder called App: App/Data 
 # An example is: dir_data_folder="/Users/jonas/Documents/KU Leuven/Year 4/Semester 2/Modern Data Analytics/Assignment/App/Data/"
 
-dir_data_folder="C:/Users/terli/Programs/Python/Projects/Latvia_Noise_in_leuven/Data/"
+dir_data_folder="Data"
 
 
 

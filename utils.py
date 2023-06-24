@@ -315,7 +315,7 @@ def Preprocess_to_sequence(dataframe:pd.DataFrame,columns_to_keep:list,variable_
     for loc in locations:
         dictloc[loc]=Sequence_sound[Sequence_sound['Location']==loc].copy()
 
-    nhours=24
+    nhours=window
     X=[]
     y=[]
 

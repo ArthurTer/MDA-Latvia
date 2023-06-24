@@ -19,7 +19,7 @@ from sklearn.neural_network import MLPRegressor, MLPClassifier
 import seaborn as sns
 import matplotlib.pyplot as plt
 import matplotlib.dates as mdates
-from shapely.geometry import Point, Polygon
+# from shapely.geometry import Point, Polygon
 import calplot 
 import folium
 import streamlit as st

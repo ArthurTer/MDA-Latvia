@@ -66,7 +66,7 @@ dir_data_folder="Data"
 
 dirmeteo=os.path.join(dir_data_folder, "Meteo/*.csv")
 dirclass=os.path.join(dir_data_folder, "Classified_events/*.csv")
-dirpercent=os.path.join(dir_data_folder, "Percentiled_data/*.csv")
+dirpercent=os.path.join(dir_data_folder, "Percentiled_Data/*.csv")
 direvent=os.path.join(dir_data_folder, "Events/*.csv")
 
 

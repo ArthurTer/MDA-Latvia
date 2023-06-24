@@ -56,11 +56,8 @@ st.set_page_config(layout="wide")
 # On the row below this set of code, between the brackets you have to set the path to the folder called 'Data'
 # This folder can be found in the following path of the downloaded folder called App: App/Data 
 # An example is: dir_data_folder="/Users/jonas/Documents/KU Leuven/Year 4/Semester 2/Modern Data Analytics/Assignment/App/Data/"
-dir_data_folder="D:/MDA/Data/"
 
-dir_model_folder="C:/Users/terli/Programs/Python/Projects/Latvia_Noise_in_leuven/Models/"
-
-dir_datasets_folder="C:/Users/terli/Programs/Python/Projects/Latvia_Noise_in_leuven/Datasets/"
+dir_data_folder="C:/Users/terli/Programs/Python/Projects/Latvia_Noise_in_leuven/Data/"
 
 
 
@@ -71,16 +68,17 @@ dir_datasets_folder="C:/Users/terli/Programs/Python/Projects/Latvia_Noise_in_leu
 dirmeteo=os.path.join(dir_data_folder, "Meteo/*.csv")
 dirclass=os.path.join(dir_data_folder, "Classified_events/*.csv")
 dirpercent=os.path.join(dir_data_folder, "Percentiled_data/*.csv")
-direvent=os.path.join(dir_datasets_folder, "Events/*.csv")
+direvent=os.path.join(dir_data_folder, "Events/*.csv")
 
 
-LSTM_checkpoint=os.path.join(dir_model_folder, "LSTM_checkpoint.ckpt")
-History_LSTM_file=os.path.join(dir_model_folder, "History_LSTM.pkl")
-MLP_file_sav=os.path.join(dir_model_folder, "MLP_regr_model.sav")
-MLP_classifier_file=os.path.join(dir_model_folder, "MLP_class_model.sav")
+LSTM_checkpoint=os.path.join(dir_data_folder, "Models/LSTM_checkpoint.ckpt")
+History_LSTM_file=os.path.join(dir_data_folder, "Models/History_LSTM.pkl")
 
-Weather_Metadata=os.path.join(dir_datasets_folder, "01_Metadata_v2.sav")
-Sound_weather_file=os.path.join(dir_datasets_folder, "Sound_weather.sav")
+MLP_file_sav=os.path.join(dir_data_folder, "Models/MLP_regr_model.sav")
+MLP_classifier_file=os.path.join(dir_data_folder, "Models/MLP_class_model.sav")
+
+Weather_Metadata=os.path.join(dir_data_folder, "01_Metadata_v2.csv")
+Sound_weather_file=os.path.join(dir_data_folder, "Sound_weather.csv")
 
 
 

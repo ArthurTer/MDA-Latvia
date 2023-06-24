@@ -18,7 +18,7 @@ import plotly.graph_objects as go
 
 from sklearn.metrics import mean_squared_error
 from utils import Preprocess_to_sequence, Validation_Loss_Accuracy
-from Homepage import dir_model_folder
+from Homepage import dir_data_folder
 
 st.set_page_config(layout="wide")
 
@@ -30,10 +30,10 @@ Meteo = st.session_state['Meteo']
 Year_events = st.session_state['Year_events']
 
 #Load the model and history:
-LSTM_file=os.path.join(dir_model_folder, r"LSTM_checkpoint.ckpt")
-History_LSTM_file=os.path.join(dir_model_folder, r"History_LSTM.pkl")
+LSTM_checkpoint=os.path.join(dir_data_folder, "Models/LSTM_checkpoint.ckpt")
+History_LSTM_file=os.path.join(dir_data_folder, "Models/History_LSTM.pkl")
 History=pickle.load(open(History_LSTM_file, 'rb'))
-LSTM_Model = tf.keras.models.load_model(LSTM_file)
+LSTM_Model = tf.keras.models.load_model(LSTM_checkpoint)
 
 # The Dataset we merge all the others on is the percentiled noise one, every merge is based on the hour, 'Date_time' except from the first one where we want to keep the locations specific.
 # We then merge the dataset containing the classifications, not all the date appears so we will fill the missing values with 0. 

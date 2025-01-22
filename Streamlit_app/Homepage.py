@@ -56,7 +56,7 @@ st.set_page_config(layout="wide")
 # This folder can be found in the following path of the downloaded folder called App: App/Data 
 # An example is: dir_data_folder="/Users/jonas/Documents/KU Leuven/Year 4/Semester 2/Modern Data Analytics/Assignment/App/Data/"
 
-dir_data_folder="Data"
+dir_data_folder="..//Data"
 
 
 
@@ -82,7 +82,7 @@ Sound_weather_file=os.path.join(dir_data_folder, "Sound_weather.csv")
 
 
 metadata=pd.read_csv(Weather_Metadata)
-
+print(metadata)
 # Set title and caption
 st.title('Noise in Leuven')
 #st.caption('MDA-Latvia')

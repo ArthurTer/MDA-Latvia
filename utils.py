@@ -522,7 +522,7 @@ _________________________________________________
     Returns:
         _type_: Returns a folium map where the red dots represent location of microphones and the blue dots represent the weather stations' locations.
     """
-    map=folium.Map(location=[50.87577038284798, 4.7007329375351385],zoom_start=13,scrollWheelZoom=False,width=width,height=height)
+    map=folium.Map(location=[50.87577038284798, 4.7007329375351385],zoom_start=15,scrollWheelZoom=False,width=width,height=height)
     list_mic=df_noise[['Loc','LAT','LON']].values.tolist()
     list_meteo=df_weather[['ID','LAT','LON']].values.tolist()
     naamsestraat= df_noise[['LAT','LON']].sort_values(by=['LAT']).values.tolist()

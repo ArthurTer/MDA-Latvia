@@ -3,4 +3,5 @@
 Streamlit_app/__pycache__/
 Bucket_test.ipynb
 Data/
-demo_1.ipynb
+shapefiles/
+DEMO.html
